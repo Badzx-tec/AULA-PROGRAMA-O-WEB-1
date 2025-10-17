@@ -1,59 +1,106 @@
-<!DOCTYPE html> 
-<html lang="pt-BR"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Cadastro de Usuários</title> 
-</head> 
-<body style="font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4;"> 
-     <header>
-        <h1>Usuários</h1> 
-         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <link rel="stylesheet" href="/estilos/style.css">
-            </ul>
-        </nav>
-     </header>
-        <main>
-                <section>
-                    <h2>Quem Somos?</h2>
-                    <p>Somos uma organização sem fins, com o foco em ajudar as pessoas moradoras de rua.</p>
-                    <img src="/fotos/mendingo.jpg" alt="Pessoa em situação de rua" style="width:300px;height:auto;">
-                </section>   
-                    <section>
-                        <h2>Nossos Objetivos</h2>
-                        <ul>
-                            <li>Ajudar pessoas em situação de rua a encontrarem moradia.</li>
-                            <li>Fornecer suporte emocional e psicológico.</li>
-                            <li>Oferecer oportunidades de emprego e capacitação.</li>
-                        </ul>
-                </section>
-                <section>
-                    <h2>Como Você Pode Ajudar</h2>
-                    <p>Você pode contribuir de várias maneiras:</p>
-                    <ol>
-                        <li>Doações financeiras ou de bens.</li>
-                        <li>Voluntariado em nossas atividades.</li>
-                        <li>Divulgação do nosso trabalho nas redes sociais.</li>
-                    </ol>
-                </section>
-                <Section>
-                    <h2>Contato</h2>
-                    <p>Para mais informações, entre em contato conosco pelo email: juannicarosa@gmail.com
-                        <p>
-                            Telefone: (99) 99999-9999,    
-                            Endereço: Rua Exemplo, 123, Cidade, Estado.    
-                        </p>
-                    </p>
-                </Section>
-        </main>      
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Esperança — Início</title>
+  <meta name="description" content="Plataforma para ONGs: missão, projetos, voluntariado e doações com transparência.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="ONG Esperança">
+  <meta property="og:description" content="Conheça nossa missão, projetos e como participar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Página inicial ONG Esperança">
+        <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.88L18.18 22 12 18.77 5.82 22 7 14.15l-5-4.88 6.91-1.01L12 2z" fill="currentColor"/></svg>
+        <span>ONG Esperança</span>
+      </a>
+      <nav aria-label="principal">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <footer>
-            <p>&copy; 2024 Organização de Apoio a Pessoas em Situação de Rua</p>
-        </footer>
+  <main id="conteudo" class="site-main">
+    <section class="hero" aria-label="Mensagem principal">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Transformando realidades com transparência e engajamento</h1>
+          <p>Conheça nossa missão, impacte projetos sociais e faça parte como voluntário ou doador.</p>
+          <div class="cta">
+            <a class="btn" href="projetos.html">Conhecer projetos</a>
+            <a class="btn btn-secondary" href="cadastro.html">Quero participar</a>
+          </div>
+        </div>
+        <picture>
+          <source srcset="assets/img/hero.webp" type="image/webp">
+          <img src="assets/img/hero.jpg" alt="Voluntários em ação em projeto social" width="1200" height="600" loading="lazy">
+        </picture>
+      </div>
+    </section>
+
+    <section class="container grid-2" aria-labelledby="sec-missao">
+      <div>
+        <h2 id="sec-missao">Missão, visão e valores</h2>
+        <p>Acreditamos na dignidade humana e na justiça social. Atuamos com ética, transparência e compromisso com resultados mensuráveis.</p>
+        <ul class="check">
+          <li>Missão: promover inclusão e cidadania.</li>
+          <li>Visão: ser referência em impacto social.</li>
+          <li>Valores: transparência, empatia e colaboração.</li>
+        </ul>
+      </div>
+      <figure class="media">
+        <picture>
+          <source srcset="assets/img/equipe.webp" type="image/webp">
+          <img src="assets/img/equipe.jpg" alt="Equipe da ONG em reunião" width="800" height="600" loading="lazy">
+        </picture>
+        <figcaption>Equipe e governança</figcaption>
+      </figure>
+    </section>
+
+    <section class="container" aria-labelledby="sec-transparencia">
+      <h2 id="sec-transparencia">Transparência</h2>
+      <p>Acesse nossos relatórios anuais, prestações de contas e indicadores de impacto.</p>
+      <ul class="doc-list">
+        <li><a href="#" aria-label="Relatório anual 2024 (PDF)">Relatório anual 2024 (PDF)</a></li>
+        <li><a href="#" aria-label="Prestação de contas doações 2024 (PDF)">Prestação de contas 2024 (PDF)</a></li>
+        <li><a href="#" aria-label="Política de privacidade">Política de privacidade</a></li>
+      </ul>
+    </section>
+
+    <section class="container" aria-labelledby="sec-contato">
+      <h2 id="sec-contato">Contato</h2>
+      <address>
+        <p><strong>ONG Esperança</strong><br>
+          Rua das Flores, 100 — Centro<br>
+          Machacalis/MG — CEP 39893-000<br>
+          <a href="tel:+5533999999999">(33) 99999-9999</a> • <a href="mailto:contato@ongesperanca.org">contato@ongesperanca.org</a>
+        </p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> ONG Esperança — Transparência e Impacto.</p>
+      <ul class="social">
+        <li><a href="#" rel="noopener">Instagram</a></li>
+        <li><a href="#" rel="noopener">Facebook</a></li>
+        <li><a href="#" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
 </body>
 </html>
-
