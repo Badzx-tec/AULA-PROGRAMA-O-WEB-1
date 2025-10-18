@@ -3,27 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ONG Esperança — Início</title>
-  <meta name="description" content="Plataforma para ONGs: missão, projetos, voluntariado e doações com transparência.">
-  <meta name="robots" content="index,follow">
-  <meta property="og:title" content="ONG Esperança">
-  <meta property="og:description" content="Conheça nossa missão, projetos e como participar.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="css/styles.css" as="style">
+  <title>Minha ONG — Início</title>
+  <meta name="description" content="Site simples e acessível para apresentar a ONG, projetos e contato.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Página inicial ONG Esperança">
-        <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.88L18.18 22 12 18.77 5.82 22 7 14.15l-5-4.88 6.91-1.01L12 2z" fill="currentColor"/></svg>
-        <span>ONG Esperança</span>
-      </a>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo__wrap">
+      <a class="marca" href="index.html">Minha ONG</a>
       <nav aria-label="principal">
-        <ul class="nav">
-          <li><a href="index.html" aria-current="page">Início</a></li>
+        <ul class="menu">
+          <li><a aria-current="page" href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
@@ -31,76 +23,63 @@
     </div>
   </header>
 
-  <main id="conteudo" class="site-main">
-    <section class="hero" aria-label="Mensagem principal">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Transformando realidades com transparência e engajamento</h1>
-          <p>Conheça nossa missão, impacte projetos sociais e faça parte como voluntário ou doador.</p>
-          <div class="cta">
-            <a class="btn" href="projetos.html">Conhecer projetos</a>
-            <a class="btn btn-secondary" href="cadastro.html">Quero participar</a>
-          </div>
-        </div>
-        <picture>
-          <source srcset="assets/img/hero.webp" type="image/webp">
-          <img src="assets/img/hero.jpg" alt="Voluntários em ação em projeto social" width="1200" height="600" loading="lazy">
-        </picture>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <h1>Bem-vindo(a) à Minha ONG</h1>
+        <p>Missão, visão e valores com foco em <strong>transparência</strong> e <strong>impacto social</strong>.</p>
+        <p>
+          <a class="btn" href="projetos.html">Conheça os projetos</a>
+          <a class="btn btn--outline" href="cadastro.html">Quero participar</a>
+        </p>
+        <img src="assets/img/hero.jpg" alt="Voluntários trabalhando em um projeto social" width="1200" height="500" loading="lazy">
       </div>
     </section>
 
-    <section class="container grid-2" aria-labelledby="sec-missao">
-      <div>
-        <h2 id="sec-missao">Missão, visão e valores</h2>
-        <p>Acreditamos na dignidade humana e na justiça social. Atuamos com ética, transparência e compromisso com resultados mensuráveis.</p>
-        <ul class="check">
-          <li>Missão: promover inclusão e cidadania.</li>
-          <li>Visão: ser referência em impacto social.</li>
-          <li>Valores: transparência, empatia e colaboração.</li>
-        </ul>
-      </div>
-      <figure class="media">
-        <picture>
-          <source srcset="assets/img/equipe.webp" type="image/webp">
-          <img src="assets/img/equipe.jpg" alt="Equipe da ONG em reunião" width="800" height="600" loading="lazy">
-        </picture>
-        <figcaption>Equipe e governança</figcaption>
-      </figure>
-    </section>
-
-    <section class="container" aria-labelledby="sec-transparencia">
-      <h2 id="sec-transparencia">Transparência</h2>
-      <p>Acesse nossos relatórios anuais, prestações de contas e indicadores de impacto.</p>
-      <ul class="doc-list">
-        <li><a href="#" aria-label="Relatório anual 2024 (PDF)">Relatório anual 2024 (PDF)</a></li>
-        <li><a href="#" aria-label="Prestação de contas doações 2024 (PDF)">Prestação de contas 2024 (PDF)</a></li>
-        <li><a href="#" aria-label="Política de privacidade">Política de privacidade</a></li>
+    <section class="container bloco">
+      <h2>Sobre a organização</h2>
+      <p>Atuamos com educação, saúde e geração de renda. Nossos princípios são respeito, empatia e colaboração.</p>
+      <ul>
+        <li><strong>Missão:</strong> promover cidadania.</li>
+        <li><strong>Visão:</strong> ampliar o impacto social.</li>
+        <li><strong>Valores:</strong> ética e transparência.</li>
       </ul>
     </section>
 
-    <section class="container" aria-labelledby="sec-contato">
-      <h2 id="sec-contato">Contato</h2>
+    <section class="container bloco">
+      <h2>Transparência</h2>
+      <p>Acesse documentos públicos e relatórios:</p>
+      <ul class="lista-doc">
+        <li><a href="#" aria-label="Relatório Anual 2024 (PDF)">Relatório Anual 2024 (PDF)</a></li>
+        <li><a href="#" aria-label="Prestação de Contas 2024 (PDF)">Prestação de Contas 2024 (PDF)</a></li>
+        <li><a href="#" aria-label="Política de Privacidade">Política de Privacidade</a></li>
+      </ul>
+    </section>
+
+    <section class="container bloco">
+      <h2>Contato</h2>
       <address>
-        <p><strong>ONG Esperança</strong><br>
-          Rua das Flores, 100 — Centro<br>
-          Machacalis/MG — CEP 39893-000<br>
-          <a href="tel:+5533999999999">(33) 99999-9999</a> • <a href="mailto:contato@ongesperanca.org">contato@ongesperanca.org</a>
-        </p>
+        <p><strong>Minha ONG</strong><br>
+        Rua Exemplo, 123 — Centro — Cidade/UF<br>
+        CEP 00000-000 — <a href="tel:+550000000000">(00) 00000-0000</a><br>
+        <a href="mailto:contato@minhaong.org">contato@minhaong.org</a></p>
       </address>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="ano"></span> ONG Esperança — Transparência e Impacto.</p>
-      <ul class="social">
-        <li><a href="#" rel="noopener">Instagram</a></li>
-        <li><a href="#" rel="noopener">Facebook</a></li>
-        <li><a href="#" rel="noopener">YouTube</a></li>
-      </ul>
+  <footer class="rodape">
+    <div class="container rodape__wrap">
+      <p>© <span id="ano"></span> Minha ONG</p>
+      <nav aria-label="redes sociais">
+        <ul class="menu">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
 
-  <script defer src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
