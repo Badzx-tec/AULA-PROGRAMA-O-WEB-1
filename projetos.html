@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
 
-<title>Início • Plataforma ONG</title>
+<title>Projetos • Plataforma ONG</title>
 </head>
 <body>
 
-<header class="header" role="banner">
+<header class="header">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="container wrap">
     <a class="brand" href="index.html">
@@ -29,84 +29,63 @@
   </div>
 </header>
 
-<main id="conteudo" class="container" role="main">
-  <section class="hero" aria-labelledby="titulo-hero">
-    <div class="text">
-      <h1 id="titulo-hero">ONGs fortes, comunidades melhores</h1>
-      <p>Amplie o alcance da sua organização com uma presença digital acessível, responsiva e transparente. Publique projetos, receba doações e engaje voluntários.</p>
-      <div class="cta">
-        <a class="btn" href="projetos.html">Ver projetos</a>
-        <a class="btn secondary" href="cadastro.html">Cadastrar-se</a>
-      </div>
-    </div>
-    <picture>
-      <source srcset="assets/img/hero.webp" type="image/webp">
-      <img src="assets/img/hero.png" width="1400" height="560" alt="Colaboradores em ação em projeto social" loading="lazy">
-    </picture>
-  </section>
+<main id="conteudo" class="container">
+  <header>
+    <h1>Projetos sociais e oportunidades</h1>
+    <p class="hint">Conheça nossos projetos, inscreva-se como voluntário e saiba como doar.</p>
+  </header>
 
-  <section aria-labelledby="missao">
-    <h2 id="missao">Missão, Visão e Valores</h2>
+  <section aria-labelledby="lista-projetos">
+    <h2 id="lista-projetos">Projetos em destaque</h2>
     <div class="grid">
-      <article class="card">
-        <div class="body">
-          <h3>Missão</h3>
-          <p>Fortalecer ONGs com tecnologia simples e aberta para potencializar impacto social.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="body">
-          <h3>Visão</h3>
-          <p>Toda organização da sociedade civil com presença digital acessível e transparente.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="body">
-          <h3>Valores</h3>
-          <p>Transparência, acessibilidade, colaboração e respeito às comunidades.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section aria-labelledby="impacto">
-    <h2 id="impacto">Transparência e impacto</h2>
-    <div class="grid">
-      <article class="card">
+      <article class="card" itemscope itemtype="https://schema.org/Project">
         <picture>
           <source srcset="assets/img/projeto1.webp" type="image/webp">
-          <img src="assets/img/projeto1.png" alt="Ilustração de projetos comunitários" loading="lazy" width="900" height="600">
+          <img src="assets/img/projeto1.png" alt="Projeto Reforço Escolar" loading="lazy" width="900" height="600">
         </picture>
         <div class="body">
-          <h3>Projetos</h3>
-          <p>Catálogo organizado por categorias com metas e indicadores.</p>
+          <h3 itemprop="name">Reforço Escolar Comunitário</h3>
+          <p itemprop="description" class="hint">Aulas de apoio para crianças do bairro JK, foco em leitura e matemática.</p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn secondary" href="cadastro.html#doacao">Quero doar</a>
         </div>
       </article>
-      <article class="card">
+
+      <article class="card" itemscope itemtype="https://schema.org/Project">
         <picture>
           <source srcset="assets/img/projeto2.webp" type="image/webp">
-          <img src="assets/img/projeto2.png" alt="Mãos simbolizando voluntariado" loading="lazy" width="900" height="600">
+          <img src="assets/img/projeto2.png" alt="Projeto Horta Urbana" loading="lazy" width="900" height="600">
         </picture>
         <div class="body">
-          <h3>Voluntariado</h3>
-          <p>Oportunidades com inscrição simples e certificado digital.</p>
+          <h3 itemprop="name">Horta Urbana Solidária</h3>
+          <p itemprop="description" class="hint">Capacitação em cultivo e distribuição de hortaliças para famílias.</p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn secondary" href="cadastro.html#doacao">Quero doar</a>
         </div>
       </article>
-      <article class="card">
+
+      <article class="card" itemscope itemtype="https://schema.org/Project">
         <picture>
           <source srcset="assets/img/projeto3.webp" type="image/webp">
-          <img src="assets/img/projeto3.png" alt="Ícone de doação e transparência" loading="lazy" width="900" height="600">
+          <img src="assets/img/projeto3.png" alt="Projeto Tecnologia Acessível" loading="lazy" width="900" height="600">
         </picture>
         <div class="body">
-          <h3>Doações</h3>
-          <p>Campanhas com metas visuais e prestação de contas.</p>
+          <h3 itemprop="name">Tecnologia Acessível</h3>
+          <p itemprop="description" class="hint">Laboratório aberto de inclusão digital para juventudes.</p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn secondary" href="cadastro.html#doacao">Quero doar</a>
         </div>
       </article>
     </div>
   </section>
+
+  <aside aria-labelledby="transparencia">
+    <h2 id="transparencia">Transparência</h2>
+    <p class="hint">Relatórios de prestação de contas estarão disponíveis nesta seção.</p>
+  </aside>
 </main>
 
-<footer role="contentinfo">
+<footer>
   <div class="container cols">
     <section aria-labelledby="f-sobre">
       <h2 id="f-sobre">Sobre</h2>
@@ -133,5 +112,6 @@
 </footer>
 <script src="assets/js/main.js" defer></script>
 
+<script>document.getElementById('nav-proj').setAttribute('aria-current','page');</script>
 </body>
 </html>

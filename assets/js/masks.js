@@ -26,17 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const cep = document.getElementById('cep');
   const tel = document.getElementById('telefone');
 
-  if (cpf){
-    cpf.addEventListener('input', (e) => { e.target.value = maskCPF(e.target.value); });
-  }
-  if (cep){
-    cep.addEventListener('input', (e) => { e.target.value = maskCEP(e.target.value); });
-  }
-  if (tel){
-    tel.addEventListener('input', (e) => { e.target.value = maskPhone(e.target.value); });
-  }
+  if (cpf){ cpf.addEventListener('input', (e) => { e.target.value = maskCPF(e.target.value); }); }
+  if (cep){ cep.addEventListener('input', (e) => { e.target.value = maskCEP(e.target.value); }); }
+  if (tel){ tel.addEventListener('input', (e) => { e.target.value = maskPhone(e.target.value); }); }
 
-  // Live validity hints
   document.querySelectorAll('input, select, textarea').forEach(el => {
     el.addEventListener('invalid', () => {
       const out = el.parentElement.querySelector('.error');

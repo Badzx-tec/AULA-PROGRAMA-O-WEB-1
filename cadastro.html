@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header class="header" role="banner">
+<header class="header">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="container wrap">
     <a class="brand" href="index.html">
@@ -29,7 +29,7 @@
   </div>
 </header>
 
-<main id="conteudo" class="container" role="main">
+<main id="conteudo" class="container">
   <header>
     <h1>Cadastro</h1>
     <p class="hint">Preencha seus dados para participar como voluntário(a) e/ou apoiar projetos com doações.</p>
@@ -91,7 +91,7 @@
 
         <label class="label" for="endereco">Endereço *</label>
         <div>
-          <input id="endereco" name="endereco" type="text" autocomplete="street-address" required aria-describedby="end-erro">
+          <input id="endereco" name="endereco" type="text" autocomplete="address-line1" required aria-describedby="end-erro">
           <div class="error" id="end-erro" aria-live="polite"></div>
         </div>
 
@@ -149,7 +149,7 @@
   </form>
 </main>
 
-<footer role="contentinfo">
+<footer>
   <div class="container cols">
     <section aria-labelledby="f-sobre">
       <h2 id="f-sobre">Sobre</h2>
