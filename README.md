@@ -31,14 +31,3 @@ Este repositório contém 3 páginas HTML5 semânticas com acessibilidade, respo
 
 ## Como validar no W3C
 Abra https://validator.w3.org/nu/ e valide cada arquivo (URL do GitHub Pages ou upload do arquivo). Corrija avisos caso o professor exija 0 warnings.
-
-## Como publicar no GitHub (público) e GitHub Pages
-1. Crie um repositório **público** e faça upload de todos os arquivos mantendo as pastas.
-2. Em **Settings → Pages**, escolha a branch (geralmente `main`) e a pasta `/root`.
-3. Acesse a URL que o GitHub fornecer (ex.: `https://seuusuario.github.io/ong-plataforma/`).  
-4. Envie esse link no AVA; garanta que o repositório está público.
-
-## Dicas
-- Substitua as imagens `assets/img/*.png/.webp` por fotos reais da ONG (mantendo nomes).
-- Revise contraste de cores se alterar a paleta (objetivo: AA).
-- Para testes locais, abra os `.html` no navegador ou sirva com `python -m http.server`.
