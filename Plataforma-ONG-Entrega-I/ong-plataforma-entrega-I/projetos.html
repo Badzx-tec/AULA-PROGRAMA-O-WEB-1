@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plataforma web para ONGs: projetos, doações e voluntariado com transparência.">
+  <meta name="theme-color" content="#10b981">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+<title>Projetos • Plataforma ONG</title>
+</head>
+<body>
+
+<header class="header" role="banner">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="container wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="Logo da Plataforma ONG" width="120" height="28" loading="eager">
+      <span>Plataforma ONG</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html" id="nav-home">Início</a>
+      <a href="projetos.html" id="nav-proj">Projetos</a>
+      <a href="cadastro.html" class="btn" id="nav-cad">Cadastro</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" class="container" role="main">
+  <header>
+    <h1>Projetos sociais e oportunidades</h1>
+    <p class="hint">Conheça nossos projetos, inscreva-se como voluntário e saiba como doar.</p>
+  </header>
+
+  <section aria-labelledby="lista-projetos">
+    <h2 id="lista-projetos">Projetos em destaque</h2>
+    <div class="grid">
+      <article class="card" itemscope itemtype="https://schema.org/Project">
+        <picture>
+          <source srcset="assets/img/projeto1.webp" type="image/webp">
+          <img src="assets/img/projeto1.png" alt="Projeto Reforço Escolar" loading="lazy" width="900" height="600">
+        </picture>
+        <div class="body">
+          <h3 itemprop="name">Reforço Escolar Comunitário</h3>
+          <p itemprop="description" class="hint">Aulas de apoio para crianças do bairro JK, foco em leitura e matemática.</p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn secondary" href="cadastro.html#doacao">Quero doar</a>
+        </div>
+      </article>
+
+      <article class="card" itemscope itemtype="https://schema.org/Project">
+        <picture>
+          <source srcset="assets/img/projeto2.webp" type="image/webp">
+          <img src="assets/img/projeto2.png" alt="Projeto Horta Urbana" loading="lazy" width="900" height="600">
+        </picture>
+        <div class="body">
+          <h3 itemprop="name">Horta Urbana Solidária</h3>
+          <p itemprop="description" class="hint">Capacitação em cultivo e distribuição de hortaliças para famílias.</p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn secondary" href="cadastro.html#doacao">Quero doar</a>
+        </div>
+      </article>
+
+      <article class="card" itemscope itemtype="https://schema.org/Project">
+        <picture>
+          <source srcset="assets/img/projeto3.webp" type="image/webp">
+          <img src="assets/img/projeto3.png" alt="Projeto Tecnologia Acessível" loading="lazy" width="900" height="600">
+        </picture>
+        <div class="body">
+          <h3 itemprop="name">Tecnologia Acessível</h3>
+          <p itemprop="description" class="hint">Laboratório aberto de inclusão digital para juventudes.</p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn secondary" href="cadastro.html#doacao">Quero doar</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <aside aria-labelledby="transparencia">
+    <h2 id="transparencia">Transparência</h2>
+    <p class="hint">Relatórios de prestação de contas estarão disponíveis nesta seção.</p>
+  </aside>
+</main>
+
+<footer role="contentinfo">
+  <div class="container cols">
+    <section aria-labelledby="f-sobre">
+      <h2 id="f-sobre">Sobre</h2>
+      <p class="hint">Plataforma de apoio a ONGs para divulgação de projetos, doações e voluntariado com transparência.</p>
+    </section>
+    <section aria-labelledby="f-contato">
+      <h2 id="f-contato">Contato</h2>
+      <ul>
+        <li><a href="mailto:contato@plataforma-ong.org">contato@plataforma-ong.org</a></li>
+        <li><a href="tel:+550000000000">(00) 00000-0000</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="f-midias">
+      <h2 id="f-midias">Redes</h2>
+      <ul>
+        <li><a href="#" rel="nofollow">Instagram</a></li>
+        <li><a href="#" rel="nofollow">YouTube</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="container">
+    <small>&copy; <span id="year"></span> Plataforma ONG • Transparência e Impacto</small>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+
+<script>document.getElementById('nav-proj').setAttribute('aria-current','page');</script>
+</body>
+</html>
